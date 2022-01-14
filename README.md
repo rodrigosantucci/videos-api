@@ -1,4 +1,4 @@
-####INSTALACAO DO JAVA JDK
+###INSTALACAO DO JAVA JDK
 Copiar arquivos install-java.sh e openjdk-14_linux-x64_bin.tar.gz para o servidor e executar os seguintes comandos: 
 
 #Dar permissão de escrita
