@@ -1,16 +1,16 @@
-###INSTALACAO DO JAVA JDK
+### INSTALACAO DO JAVA JDK
 Copiar arquivos install-java.sh e openjdk-14_linux-x64_bin.tar.gz para o servidor e executar os seguintes comandos: 
 
-#Dar permissão de escrita
+# Dar permissão de escrita
 sudo chmox +x install-java.sh
 
-#Executar script instalação
+# Executar script instalação
 ./ 
 openjdk-14_linux-x64_bin.tar.gz
 
 
 
-##configuração etc/enviroment e bashrc
+## configuração etc/enviroment e bashrc
  
 sudo vim /etc/enviroment
 
@@ -25,7 +25,7 @@ export JAVA_HOME="/usr/lib/jvm/jdk-14"
 
 
 
-##Instalacao do Gradle
+## Instalacao do Gradle
 
 
 
