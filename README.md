@@ -3,7 +3,7 @@ Copiar arquivos install-java.sh e openjdk-14_linux-x64_bin.tar.gz para o servido
 
 # Dar permissão de escrita
 sudo chmox +x install-java.sh
-sudo ./install-java.sh -f openjdk-14_linux-x64_bin.tar.gz
+sudo ./install-java.sh  -f openjdk-14_linux-x64_bin.tar.gz -p /usr/lib/jvm/jdk-14
 
 ## configuração etc/enviroment e bashrc
  
