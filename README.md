@@ -71,6 +71,9 @@ CREATE TABLE `videos` (
 
 
 ###Dentro da pasta da api executar o comandos
+## Permissão pasta .gradle
+sudo chown -R <USERNAME> .gradle/ 
+
 
 ## Buildar aplicação 
 ./gradlew clean
