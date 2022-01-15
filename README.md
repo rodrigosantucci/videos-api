@@ -3,29 +3,26 @@ Copiar arquivos install-java.sh e openjdk-14_linux-x64_bin.tar.gz para o servido
 
 # Dar permissão de escrita
 sudo chmox +x install-java.sh
-
-# Executar script instalação
-./ 
-openjdk-14_linux-x64_bin.tar.gz
-
-
+sudo ./install-java.sh -f openjdk-14_linux-x64_bin.tar.gz
 
 ## configuração etc/enviroment e bashrc
  
 sudo vim /etc/enviroment
-
+source /etc/environment
 escrever:
 JAVA_HOME="/usr/lib/jvm/jdk-14"
 
 e no arquivo .bashrc: 
 sudo vim ~/.bashrc
-
 escrever:
 export JAVA_HOME="/usr/lib/jvm/jdk-14"
 
+### Instalacao do Gradle
+Copiar arquivos tar.gz do gradle-7.3.3-bin.zip para o servidor
 
-
-## Instalacao do Gradle
+sudo mkdir /opt/gradle
+sudo unzip -d /opt/gradle gradle-7.3.3-bin.zip
+export PATH=$PATH:/opt/gradle/gradle-7.3.3/bin
 
 
 
