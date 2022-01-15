@@ -90,4 +90,8 @@ http://localhost:8080/swagger-ui.html
 ## Listar serviços e portas em uso
 sudo lsof -i -P -n
 
+ 
+ ##Liberar portas para publico externo
+firewall-cmd --permanent --reload --zone=public --add-port=8080/tcp*
 
+sudo systemctl restart firewalld*
