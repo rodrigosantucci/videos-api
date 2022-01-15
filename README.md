@@ -70,12 +70,13 @@ CREATE TABLE `videos` (
 ```
 
 
-###Dentro da pasta da api executar o comandos
+### Dentro da pasta da api executar o comandos
 ## Permissão pasta .gradle
 sudo chown -R <USERNAME> .gradle/ 
 
 
 ## Buildar aplicação 
+./gradlew wrapper
 ./gradlew clean
 ./gradlew build
 
@@ -83,7 +84,7 @@ sudo chown -R <USERNAME> .gradle/
 ./gradlew bootRun
 
 
-##Link da Documentação da API no Swagger
+## Link da Documentação da API no Swagger
 http://localhost:8080/swagger-ui.html
 
 
@@ -91,7 +92,7 @@ http://localhost:8080/swagger-ui.html
 sudo lsof -i -P -n
 
  
- ##Liberar portas para publico externo
+ ## Liberar portas para publico externo
 firewall-cmd --permanent --reload --zone=public --add-port=8080/tcp*
 
 sudo systemctl restart firewalld*
